@@ -5,4 +5,11 @@
 {% block body %}
     <h2>Hello la nouvelle page !</h2>
     <p>Agent {{ nom }}</p>
+
+    {# Affiche une image depuis le dossier "public" #}
+    <img src="{{ asset('imgs/mer.jpg')|imagine_filter('thumbnail') }}" alt="L'océan">
+
+    <p>Pour afficher cette image sur votre site, coller cette URL :
+    {{ absolute_url(asset('imgs/mer.jpg')) }}</p>
+
 {% endblock %}

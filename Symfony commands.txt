@@ -1,0 +1,60 @@
+ for the controller
+ 
+ symfony console make:controller HomeController
+
+npm install
+
+
+npm run build
+
+ symfony console
+
+
+symfony console debug:router
+
+
+settings emmet 
+
+
+composer require liip/imagine-bundle
+
+in the file package liip iamhine yaml
+
+{
+    filter_sets:
+        cache: ~
+
+        # Nom du filtre
+        thumbnail:
+
+            # Ajuster la qualité de l'image
+            quality: 85
+
+            # Listes des différentes transformations
+            filters:
+
+                # Création d'une vignette
+                thumbnail: { size: [120, 90], mode: outbound }
+}
+
+
+for creating Database
+
+symfony console doctrine:database:create
+
+
+symfony console make:entity Article
+
+
+symfony console make:migration
+
+
+symfony console doctrine:migration:migrate              yes
+
+
+composer require doctrine/data-fixtures
+
+
+
+
+
